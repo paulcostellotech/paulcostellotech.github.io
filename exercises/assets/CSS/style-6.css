@@ -48,3 +48,11 @@ p {
    line-height: 1.6;
    margin-bottom: 20px;
 }
+
+
+/* images */
+img {
+    margin-bottom: 32px;
+    /* Soften corners of images */
+    border-radius: 15px;
+}

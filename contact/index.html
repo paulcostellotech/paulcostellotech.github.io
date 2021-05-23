@@ -8,11 +8,9 @@
 	<title>Obituary Website Designed by Paul Costello</title>
 	<meta name="description" content="Publishing online obituaries and memorial notices online, free of charge.">
 	
-	<link href="assets/css/global.css" rel="stylesheet">
-
+	<link href="../assets/css/global.css" rel="stylesheet">
 
     <!-- Link to Google Fonts -->
- 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 
@@ -34,25 +32,21 @@
 </head>
 
 
-<body>
+<body class="bg-pastel-grey">
 
-    <!-- Header -->
-
-
-    <!-- Begin desktop menu -->
-    
-    
-    
+     <!-- Begin desktop menu -->
     <div class="container-menu-desktop menu-light menu-sticky">
-       
         <!-- first child item -->
+        <!-- deleted by Paul-->
+
+        <!-- second child item -->
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutus/index.html">About Us</a></li>
-            <li><a href="index.html">Place Obituary</a></li>
-            <li><a href="index.html">Place Anniversary</a></li>
-            <li><a href="featured/index.html">Featured</a></li>
-            <li><a href="resources/index.html">Resources</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../aboutus/index.html">About Us</a></li>
+            <li><a href="../index.html">Place Obituary</a></li>
+            <li><a href="../index.html">Place Anniversary</a></li>
+            <li><a href="../featured/index.html">Featured</a></li>
+            <li><a href="../resources/index.html">Resources</a></li>
             <li><a href="contact/index.html" class="btn-cta">Contact &nbsp;<i class="fas fa-arrow-right"></i></a></li>
         </ul>
     </div>
@@ -61,8 +55,7 @@
 
     <!-- Begin mobile menu bar -->
     <div class="container-menu-bar-mobile menu-light menu-sticky">
-            <!-- first child -->
-            <a href="index.html"><img src="assets/img/bird-logo.png" alt="website logo"></a>
+
             <!-- second child -->
             <div class="item-icon">
                 <div class="bar1"></div>
@@ -75,9 +68,11 @@
     <!-- Begin mobile menu slide-out options -->
     <div class="flyout-menu flyout-menu-is-closed menu-light">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact/index.html" class="btn-cta">Contact &nbsp;<i class="fas fa-arrow-right"></i></a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../portfolio/index.html">Portfolio</a></li>
+            <li><a href="../contact/index.html" class="btn-cta">Contact &nbsp;<i class="fas fa-arrow-right"></i></a></li>
         </ul>
+
 
 
         <h4>Social Links</h4>
@@ -92,101 +87,50 @@
         <p>&nbsp;</p>
         <p>&nbsp;</p>
     </div>
-    <!-- End mobile menu slide-out options -->
 
-     <!-- Begin hero block -->
-    
-    
-     <div class="container-header">
 
-        <h1> Obituary </h1>
+    <!-- Begin container for contact form -->
+        
+    <div class="container-contact-form">
+        <h3>Get in touch</h3>
+        <p>Complete the form below and a member of our team will be in contact shortly.</p>
+        
+        <!-- Contact form starts here -->
+        <form id="contact-form" name="contact-form" accept-charset="utf-8" method="post" action="https://formspree.io/f/xnqlnoer">
 
-    </div>  
-    
-     <div class="container-flexbox container-hero-block-two-columns unhide-content-under-sticky-menu">
-      
-        <div class="item-3">
-            <img src="assets/img/bird-logo.png" alt="hero image">
-        </div> 
+            <!-- Begin contact form fields -->
 
-        <div class="item-2 slide-in-left">
-            <h1>Search Obituary Notices</h1>
-            <a href="contact/index.html" class="button button-solid">Search &nbsp;<i class="fas fa-arrow-right"></i></a>
-        </div>
+            <div class="flex-row">
+                <div class="item-name">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" name="name" id="full-name" placeholder="Your First and Last Name here." required>
+                </div>
+                <div class="item-email">
+                    <label for="email-address">Email</label>
+                    <input type="email" name="_replyto" id="email-address" placeholder="Your Email Address here." required>
+                </div>
+            </div>
 
-    <div class="container-header2">
+            <div class="flex-row">
+                <div class="item-textarea">
+                    <label for="message">Message</label>
+                    <textarea rows="5" name="message" id="message" placeholder="Your Message here." required></textarea>
+                </div>
 
-            <h6> Featured </h6>
-    
-    </div>  
+                <div class="item-btn">
+                    <button id="btn-submit" type="submit">Send <i class="fas fa-arrow-circle-right"></i></button> 
+                </div>
+            </div>
 
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            <!-- End contact form fields -->
+
+        </form>
+        <!-- Contact form ends here -->
 
     </div>
-    <!-- End hero block -->
+    <!-- End container for contact form -->
 
-	<!-- Begin single-column container -->
-
-	<!-- Begin parent flexbox container for one column layout (.item-1) on all screens
-	<div class="container-flexbox bg-pastel-green">
-
-        <div class="col-1">
-        <img src="assets/img/david-bowie.jpg" alt="David Bowie">
-        <h1>David Bowie</h1>
-        <h2>London, England</h2>
-        </div>
-
-        <div class="col-2">
-        <img src="assets/img/elvis-presley.jpg" alt="Elvis Presley">
-        <h1>Elvis Presley</h1>
-        <h2>Tennessee, USA</h2>
-        </div>
-
-        <div class="col-3">
-        <img src="assets/img/whitney-houston.jpg" alt="Whitney Houston">
-        <h1>Whitney Houston</h1>
-        <h2>New Jersey, USA</h2>
-        </div>
-
-        <div class="col-4">
-        <img src="assets/img/amy-winehouse.jpg" alt="Amy Winehouse">
-        <h1>Amy Winehouse</h1>
-        <h2>London, England</h2>
-        </div>
-
-    </div>
-    
-     End parent flexbox container -->
-    
-	
-	<!-- Begin parent flexbox container for three-column layout (.item-3) on desktops and one-column layout on mobiles -->
-	<div class="container-flexbox bg-pastel-grey">
-
-        <div class="item-4">
-            <img src="assets/img/david-bowie.jpg" alt="David Bowie">
-            <h1>David Bowie</h1>
-            <h2>London, England</h2>
-            </div>
-    
-            <div class="item-5">
-            <img src="assets/img/elvis-presley.jpg" alt="Elvis Presley">
-            <h1>Elvis Presley</h1>
-            <h2>Tennessee, USA</h2>
-            </div>
-    
-            <div class="item-6">
-            <img src="assets/img/whitney-houston.jpg" alt="Whitney Houston">
-            <h1>Whitney Houston</h1>
-            <h2>New Jersey, USA</h2>
-            </div>
-    
-            <div class="item-7">
-            <img src="assets/img/amy-winehouse.jpg" alt="Amy Winehouse">
-            <h1>Amy Winehouse</h1>
-            <h2>London, England</h2>
-            </div>
-
-
-	</div><!-- End parent flexbox container -->
 
     <!-- Begin HTML footer -->
     
@@ -286,7 +230,7 @@
         }
 
 		// Code for menus with transparent background
-		window.onscroll = function() {swapMenuStyle()};
+		// window.onscroll = function() {swapMenuStyle()};
 		const headerDesktop = document.querySelector('.container-menu-desktop');
 		const headerMobile = document.querySelector('.container-menu-bar-mobile');
 
@@ -295,9 +239,16 @@
 
 		function swapMenuStyle() {
 			if (window.pageYOffset > stickyDesktop) {
-				headerDesktop.classList.add("menu-drop-shadow");
+				headerDesktop.classList.add("menu-light","menu-drop-shadow");
+				headerDesktop.classList.remove("menu-transparent");
+				headerMobile.classList.add("menu-light","menu-drop-shadow");
+				headerMobile.classList.remove("menu-transparent");
+
 			} else {
-				headerDesktop.classList.remove("menu-drop-shadow");
+				headerDesktop.classList.add("menu-transparent");
+				headerDesktop.classList.remove("menu-light","menu-drop-shadow");
+				headerMobile.classList.add("menu-transparent");
+				headerMobile.classList.remove("menu-light","menu-drop-shadow");
 			}
 		}
 

@@ -5,21 +5,34 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	
-	<title>Obituary Website Designed by Paul Costello</title>
-	<meta name="description" content="Publishing online obituaries and memorial notices online, free of charge.">
+	<title>Contact | Mary Smith Web Designer</title>
+	<meta name="description" content="Helping businesses of every size and type get the most from digital platforms.">
 	
-	<link href="assets/css/global.css" rel="stylesheet">
+	<link href="../assets/css/global-2.css" rel="stylesheet">
 
-
+    <style>
+        /* Desktops  */
+        @media all and (min-width: 768px) {
+            .container-flexbox.container-hero-block-two-columns { 
+                background-image: linear-gradient(to right,#fad390, #f6b93b);
+            }  
+        }
+      
+        /* Mobiles  */
+        @media all and (max-width: 767px) {
+            .container-flexbox.container-hero-block-two-columns { 
+                background-image: linear-gradient(#fad390, #f6b93b);
+            }
+        }
+    </style>
+    
     <!-- Link to Google Fonts -->
- 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
 
 	<!-- Link to icons for Font Awesome 5 -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
-	<!-- Styles for Cookie Consent Popup Message -->
+	<!-- Styles for Cookie Consent Popup Message  -->
 	<link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -34,26 +47,17 @@
 </head>
 
 
-<body>
+<body class="bg-pastel-pink">
 
-    <!-- Header -->
-
-
-    <!-- Begin desktop menu -->
-    
-    
-    
+     <!-- Begin desktop menu -->
     <div class="container-menu-desktop menu-light menu-sticky">
-       
         <!-- first child item -->
+        <a href="../index-2.html"><img src="../assets/img/website-logo.png" alt="website logo"></a>
+        <!-- second child item -->
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutus/index.html">About Us</a></li>
-            <li><a href="index.html">Place Obituary</a></li>
-            <li><a href="index.html">Place Anniversary</a></li>
-            <li><a href="featured/index.html">Featured</a></li>
-            <li><a href="resources/index.html">Resources</a></li>
-            <li><a href="contact/index.html" class="btn-cta">Contact &nbsp;<i class="fas fa-arrow-right"></i></a></li>
+            <li><a href="../index-2.html">Home</a></li>
+            <li><a href="../portfolio/index-2.html">Portfolio</a></li>
+            <li><a href="../contact/index-2.html" class="btn-cta">Contact &nbsp;<i class="fas fa-arrow-right"></i></a></li>
         </ul>
     </div>
     <!-- End desktop menu -->
@@ -62,7 +66,7 @@
     <!-- Begin mobile menu bar -->
     <div class="container-menu-bar-mobile menu-light menu-sticky">
             <!-- first child -->
-            <a href="index.html"><img src="assets/img/bird-logo.png" alt="website logo"></a>
+            <a href="../index-2.html"><img src="../assets/img/website-logo.png" alt="website logo"></a>
             <!-- second child -->
             <div class="item-icon">
                 <div class="bar1"></div>
@@ -75,10 +79,24 @@
     <!-- Begin mobile menu slide-out options -->
     <div class="flyout-menu flyout-menu-is-closed menu-light">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact/index.html" class="btn-cta">Contact &nbsp;<i class="fas fa-arrow-right"></i></a></li>
+            <li><a href="../index-2.html">Home</a></li>
+            <li><a href="../portfolio/index-2.html">Portfolio</a></li>
+            <li><a href="../contact/index-2.html" class="btn-cta">Contact &nbsp;<i class="fas fa-arrow-right"></i></a></li>
         </ul>
 
+        <hr>
+        <h4>About Me</h4>
+        <div class="fly-out-profile-box">
+            <img src="../assets/img/profile-pic.jpg" alt="Mary Smith, web designer, Dublin">
+            <p>Hi, I'm <b>Mary Smith</b>, a web and digital designer based in Dublin, Ireland.</p>
+        </div>
+   
+        <h4>Contact</h4>
+        <p>Have a project you'd like to discuss? Let's make something great together!</p>
+
+        <h5><a href="tel:0881234567">088 123 4567</a></h5>
+
+        <h5><a href="mailto:ibat.training@gmail.com" target="_blank">marysmith@myemail.com</a></h5>
 
         <h4>Social Links</h4>
         <div class="fly-out-social-icons">
@@ -95,107 +113,76 @@
     <!-- End mobile menu slide-out options -->
 
      <!-- Begin hero block -->
-    
-    
-     <div class="container-header">
-
-        <h1> Obituary </h1>
-
-    </div>  
-    
      <div class="container-flexbox container-hero-block-two-columns unhide-content-under-sticky-menu">
-      
-        <div class="item-3">
-            <img src="assets/img/bird-logo.png" alt="hero image">
-        </div> 
-
         <div class="item-2 slide-in-left">
-            <h1>Search Obituary Notices</h1>
-            <a href="contact/index.html" class="button button-solid">Search &nbsp;<i class="fas fa-arrow-right"></i></a>
+            <h2>Websites ...</h2>
+            <h1>Planning.<br>
+            Launch.<br>
+            Upgrades.</h1>
+           <a href="../contact/index-2.html" class="button button-solid button-round">Hire me &nbsp;<i class="fas fa-arrow-right"></i></a>
         </div>
-
-    <div class="container-header2">
-
-            <h6> Featured </h6>
-    
-    </div>  
-
-
+        <div class="item-2">
+            <img src="../assets/img/hero-planning.png" alt="hero image">
+        </div>
     </div>
     <!-- End hero block -->
 
-	<!-- Begin single-column container -->
+    <!-- Begin container for contact form -->
+        
+    <div class="container-contact-form bg-pastel-pink">
+        <h3>Get in touch</h3>
+        <p>Have a project you'd like to discuss? Let's make something great together!</p>
+        
+        <!-- Contact form starts here -->
+        <form id="contact-form" name="contact-form" accept-charset="utf-8" method="post" action="https://formspree.io/myname@gmail.com">
 
-	<!-- Begin parent flexbox container for one column layout (.item-1) on all screens
-	<div class="container-flexbox bg-pastel-green">
+            <!-- Begin contact form fields -->
 
-        <div class="col-1">
-        <img src="assets/img/david-bowie.jpg" alt="David Bowie">
-        <h1>David Bowie</h1>
-        <h2>London, England</h2>
-        </div>
+            <div class="flex-row">
+                <div class="item-name">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" name="name" id="full-name" placeholder="Your First and Last Name here." required>
+                </div>
+                <div class="item-email">
+                    <label for="email-address">Email</label>
+                    <input type="email" name="_replyto" id="email-address" placeholder="Your Email Address here." required>
+                </div>
+            </div>
 
-        <div class="col-2">
-        <img src="assets/img/elvis-presley.jpg" alt="Elvis Presley">
-        <h1>Elvis Presley</h1>
-        <h2>Tennessee, USA</h2>
-        </div>
+            <div class="flex-row">
+                <div class="item-textarea">
+                    <label for="message">Message</label>
+                    <textarea rows="5" name="message" id="message" placeholder="Your Message here." required></textarea>
+                </div>
 
-        <div class="col-3">
-        <img src="assets/img/whitney-houston.jpg" alt="Whitney Houston">
-        <h1>Whitney Houston</h1>
-        <h2>New Jersey, USA</h2>
-        </div>
+                <div class="item-btn">
+                    <button id="btn-submit" type="submit">Send <i class="fas fa-arrow-circle-right"></i></button> 
+                </div>
+            </div>
 
-        <div class="col-4">
-        <img src="assets/img/amy-winehouse.jpg" alt="Amy Winehouse">
-        <h1>Amy Winehouse</h1>
-        <h2>London, England</h2>
-        </div>
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            <!-- End contact form fields -->
+
+        </form>
+        <!-- Contact form ends here -->
 
     </div>
-    
-     End parent flexbox container -->
-    
-	
-	<!-- Begin parent flexbox container for three-column layout (.item-3) on desktops and one-column layout on mobiles -->
-	<div class="container-flexbox bg-pastel-grey">
+    <!-- End container for contact form -->
 
-        <div class="item-4">
-            <img src="assets/img/david-bowie.jpg" alt="David Bowie">
-            <h1>David Bowie</h1>
-            <h2>London, England</h2>
-            </div>
-    
-            <div class="item-5">
-            <img src="assets/img/elvis-presley.jpg" alt="Elvis Presley">
-            <h1>Elvis Presley</h1>
-            <h2>Tennessee, USA</h2>
-            </div>
-    
-            <div class="item-6">
-            <img src="assets/img/whitney-houston.jpg" alt="Whitney Houston">
-            <h1>Whitney Houston</h1>
-            <h2>New Jersey, USA</h2>
-            </div>
-    
-            <div class="item-7">
-            <img src="assets/img/amy-winehouse.jpg" alt="Amy Winehouse">
-            <h1>Amy Winehouse</h1>
-            <h2>London, England</h2>
-            </div>
-
-
-	</div><!-- End parent flexbox container -->
 
     <!-- Begin HTML footer -->
     
-	<div class="container-footer bg-pastel-grey">
+	<div class="container-footer">
 
-        <h4>obituaries.com.br</h4>
-        <h5>Part of Sereva Media Corp LLC</h5>
+        <h4>Mary Smith, web designer</h4>
+        <h5>Excellence in digital creation</h5>
 
-       
+        <ul class="footer-links">
+            <li><a href="../index-2.html">Home</a></li>
+            <li><a href="../portfolio/index-2.html">Portfolio</a></li>
+            <li><a href="index-2.html">Contact</a></li>
+        </ul>
+        
         <ul class="footer-icons">
             <li>
                 <a href="https://ie.linkedin.com/school/ibat-college-dublin/" target="_blank">
@@ -206,6 +193,12 @@
             <li>
                 <a href="https://ie.linkedin.com/school/ibat-college-dublin/" target="_blank">
                     <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://ie.linkedin.com/school/ibat-college-dublin/" target="_blank">
+                    <i class="fab fa-github"></i>
                 </a>
             </li>
 
@@ -223,16 +216,10 @@
             
          </ul>                
         
-
-         <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a class="privacy-legal" href="privacy.html">Privacy & Legal</a></li>
-            <li><a href="contact/index.html">Contact</a></li>
-        </ul>
+        <a class="privacy-legal" href="../privacy-2.html">Privacy & Legal</a>
     </div>
 	
 	<!-- End HTML footer -->
-
 
 
 	<!-- Begin JavaScript code for desktop and mobile menus -->

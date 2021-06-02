@@ -5,7 +5,7 @@ body { min-height: 100%; max-width: 1600px; margin-left: auto; margin-right: aut
 img { width: 100%; height: auto; display: block }
 
 /* Default font and colours */
-body { font-family: 'Playfair' }
+body { font-family: 'Playfair Display', sans-serif }
 h1, h2, h3 { color: #403d50 }
 h7 { color: rgb(49,178,227)}
 p, p1, li, h4, h6 { color: #403d50 }
@@ -16,6 +16,8 @@ p, p1, li, h4, h6 { color: #403d50 }
 /* ===================== BEGIN MENU STYLES ========================== */
 
 /* === All screen sizes ====== */
+
+.container-menu-desktop ul {font-family: Playfair Display, sans-serif }
 
 .unhide-content-under-sticky-menu { margin-top: 72px }
 
@@ -39,7 +41,7 @@ p, p1, li, h4, h6 { color: #403d50 }
 /* Container Header Styling */
 
 .container-header h1 {
-font-size: 140px;
+font-size: calc(175px + (19 - 70) * ((100vw - 320px)/(1600 - 320)));
 font-weight: 1.3;
 letter-spacing: 3px;
 font-display: center;
@@ -48,25 +50,33 @@ padding: 10% 0% 0% 0%;
 
 }
 
-.container-flexbox2 {
+.container-flexbox2, .container-flexbox3 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 80px;
+    text-decoration: none;
 }
 
-.grief, .reading, .chat, .prohelp, .services {
+.grief, .reading, .chat, .prohelp, .services, .music {
     background-color: white;
     padding: 20px;
-    font-size: 50px;
-    margin: 80px;
+    font-size: 35px;
     display: flex;
     border-style: solid; 
+    color: rgb(49,178,227);
     border-color: rgb(49,178,227); 
-    border-width: 4px;
-    width: 30%; 
-    text-align: right;
+    border-width: 4px; 
+    text-align: left;
+    padding: 120px 20px 120px 20px
+   
 } 
+
+.container-flexbox3 { margin-left: 100px;
+    margin-right: 100px;}
+
+.container-flexbox3, .grief, .reading, .chat { margin-top: 80px }
+
+.container-flexbox3 p a { color: rgb(49,178,227) }
 
 /* === COLUMN WIDTH ON MOBILES === */
 @media (max-width: 767px) { 
@@ -76,9 +86,37 @@ padding: 10% 0% 0% 0%;
   }
 .container-header item-3 img {margin: -2px}
 
-.container-header2 {background-color:  #edf5f1 }
+.container-header2 {
+    padding: 40px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+    background-color:  #edf5f1 }
 
-.container-header2 h6 {font-size: 30px}
+.container-header3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+    background-color:  #edf5f1 }
+
+
+.container-header2 h6 {
+    width: 80%;
+    padding-top: 10px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: calc(60px + (19 - 55) * ((100vw - 320px)/(1600 - 320)));}
+
+.container-header3 h6 {
+    width: 80%;
+    padding-top: 10px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: calc(60px + (19 - 55) * ((100vw - 320px)/(1600 - 320)));}
+
+.container-flexbox3 { font-family: sans-serif; letter-spacing: 2px }
 
 .item-8 h2 {
 
@@ -137,6 +175,7 @@ background-color: rgb(49,178,227);
     border-width: 2px;
     border-style: solid;
     font-weight: bold;
+    border-radius: 5px;
 }
 
 /* style icon in cta button on desktop and mobile menus */
@@ -160,6 +199,10 @@ background-color: rgb(49,178,227);
     width: 100%;
 }
 
+.container-header { margin-top: -20px;
+    margin-bottom: -50px;
+ }
+
 .conatiner.menu-desktop {
     border-style: solid;
     border-width: 1px;
@@ -170,8 +213,19 @@ background-color: rgb(49,178,227);
     padding: 0%; 
     display: flex;
     width: 100%
-
 }
+
+.container-header3 { 
+    padding: 0%; 
+    display: flex;
+    width: 100%
+}
+
+.container-header5 { margin-top: 100px;
+    padding-left: 100px;
+    padding-top:20px
+ }
+.container-header5 h6 { font-size: 40px }
 
 /* menu links and cta button aligned horizontally */
 .container-menu-desktop ul li {
@@ -440,7 +494,7 @@ a[href^=tel] { text-decoration: none; color: red }
 	font-weight: normal; 
 	color: #4b6584;
     line-height: 1.3;
-	margin-bottom: 30px;    
+	margin-bottom: 10px;    
 	font-size: calc(18px + (28 - 18) * ((100vw - 320px) / (1600 - 320))); 
 }
 
@@ -458,8 +512,27 @@ a[href^=tel] { text-decoration: none; color: red }
     .container-one-column { padding: 4% 20% 5% 20% }
 }
 
-    .container-flexbox h1 { font-size: 20px;}
+    .container-flexbox h1 { font-size: 18px;}
     .container-flexbox h2 { font-size: 12px;}
+
+    .container-flexbox2 h1 { font-size: 18px;}
+    .container-flexbox2 h2 { font-size: 12px;}
+
+    
+    .container-flexbox4 h1 { font-size: 18px;}
+    .container-flexbox4 h2 { font-size: 12px;}
+
+.container-flexbox4 {
+    padding-top: 60px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.container-flexbox4 {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
 
 /* Mobiles */
 @media all and (max-width:767px) {
@@ -506,8 +579,11 @@ a.button:link, a.button:visited, a.button:hover, a.button:active {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-family: sans-serif;
 }
- 
+
+.button { border-radius: 5px }
+
 a.button-solid:link, .button-solid:visited {
     border-color: rgb(49,178,227);
     background-color: rgb(49,178,227);
@@ -566,6 +642,13 @@ a.fancy-link:hover, a.fancy-link:active { color: rgb(36,64,84); border-bottom-co
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+    margin-bottom: -20px;
+}
+
+.container-flexbox2 .container-flexbox3 { 
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 /* Desktops only - inside padding  */
@@ -573,11 +656,18 @@ a.fancy-link:hover, a.fancy-link:active { color: rgb(36,64,84); border-bottom-co
 	.container-flexbox { padding: 2% 10% 1% 10% }
 }
 
-/* Mobiles only - inside padding */
-@media all and (max-width:767px) {
-	.container-flexbox { padding: 7% 8% 1% 8% }
+@media all and (min-width:768px) {
+	.container-flexbox2 { padding: 2% 10% 1% 10% }
 }
 
+/* Mobiles only - inside padding */
+@media all and (max-width:767px) {
+	.container-flexbox { padding: 3% 8% 1% 8% }
+}
+
+@media all and (max-width:767px) {
+	.container-flexbox2 .container-flexbox3 { padding: 3% 8% 1% 8% }
+}
 /* ====== INNER FLEXBOX COLUMN: 1 COLUMN EVERY SCREEN ======= */
 
 .container-flexbox .item-3 { 
@@ -598,7 +688,7 @@ a.fancy-link:hover, a.fancy-link:active { color: rgb(36,64,84); border-bottom-co
 
 .container-text {
     font-size: calc(17px + (22 - 17) * ((100vw - 320px)/(1600 - 320)));
-    font-family: playfair; 
+    font-family: playfair display, sans-serif; 
     background-color: white; 
     padding: 100px;
     margin: 100px, 100px, 100px, 40px;
@@ -653,15 +743,53 @@ a.fancy-link:hover, a.fancy-link:active { color: rgb(36,64,84); border-bottom-co
 
 /* Desktops - 3 columns */
 @media all and (min-width:768px) { 
-    .container-flexbox .item-4 { width: 22% }
+    .container-flexbox .item-4 { width: 18% }
 	.container-flexbox .item-4 { margin-bottom: 6% }
-    .container-flexbox .item-5 { width: 22% }
+    .container-flexbox .item-5 { width: 18% }
 	.container-flexbox .item-5 { margin-bottom: 6% }
-    .container-flexbox .item-6 { width: 22% }
+    .container-flexbox .item-6 { width: 18% }
 	.container-flexbox .item-6 { margin-bottom: 6% }
-    .container-flexbox .item-7 { width: 22% }
+    .container-flexbox .item-7 { width: 18% }
 	.container-flexbox .item-7 { margin-bottom: 6% }
+    .container-flexbox .item-11 { width: 18% }
+	.container-flexbox .item-11 { margin-bottom: 6% }
 }
+
+@media all and (min-width:768px) {
+.container-flexbox2 .item-12 { width: 18% }
+.container-flexbox2 .item-12 { margin-bottom: 6% }
+.container-flexbox2 .item-13 { width: 18% }
+.container-flexbox2 .item-13 { margin-bottom: 6% }
+.container-flexbox2 .item-14 { width: 18% }
+.container-flexbox2 .item-14 { margin-bottom: 6% }
+.container-flexbox2 .item-15 { width: 18% }
+.container-flexbox2 .item-15 { margin-bottom: 6% }
+.container-flexbox2 .item-16 { width: 18% }
+.container-flexbox2 .item-16 { margin-bottom: 6% }
+
+}
+
+@media all and (min-width:768px) {
+    
+    .container-flexbox4 .item-10 { width: 18% }
+	.container-flexbox4 .item-10 { margin-bottom: 6% }
+    
+    }
+
+    @media all and (min-width:768px) {
+    
+        .container-flexbox2 .item-10 { width: 18% }
+        .container-flexbox2 .item-10 { margin-bottom: 6% }
+        
+        }
+        
+    @media all and (min-width:768px) {
+    
+            .grief, .reading, .chat, .prohelp, .services, .music { width: 30%; padding: 50px; border-radius: 20px } 
+            .container-flexbox3 .grief, .reading, .chat, .prohelp, .services, .music { margin-bottom: 6% }
+    }
+
+
 
 /* Mobiles - 1 column */
 @media all and (max-width:767px) { 

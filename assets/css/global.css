@@ -691,7 +691,7 @@ a.fancy-link:hover, a.fancy-link:active { color: rgb(36,64,84); border-bottom-co
     font-family: playfair display, sans-serif; 
     background-color: white; 
     padding: 100px;
-    margin: 100px, 100px, 100px, 40px;
+    margin: 80px, 100px, 80px, 40px;
 }
 
 .container-text h4 {
@@ -703,16 +703,12 @@ a.fancy-link:hover, a.fancy-link:active { color: rgb(36,64,84); border-bottom-co
 
 .container-text p {
     font-size: 30px;
-    padding: 50px 100px 20px 100px;
-    color: #403d50; 
+    padding: 50px 80px 20px 80px;
+    color: #403d50;
+    text-align: justify; 
 }
 
-.container-text p1 {
-    font-size: 30px;
-    padding: 20px 100px 40px 100px;
-    text-align: left;
-    color: #403d50;
-    }
+
 
 /* Mobiles - 1 column */
 @media all and (max-width:767px) { 
